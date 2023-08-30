@@ -1,11 +1,12 @@
-<h1 style="text-align: center;">
+<h1 align="center">
 Расширенное руководство по GIT
 <br>
 <image 
 src="./images/git-logo.png" 
-style="margin-top: 20px; width: 100%; max-width: 300px;"
+style="margin-top: 20px; width: 40vw;"
 >
 </h1>
+    
 <b style="font-size: 24px;">Разделы</b>
 
 <details> 
