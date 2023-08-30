@@ -3,7 +3,7 @@
 <br>
 <image 
 src="./images/git-logo.png" 
-style="margin-top: 20px; width: 100%; max-width: 400px;"
+style="margin-top: 20px; width: 100%; max-width: 300px;"
 >
 </h1>
 <b style="font-size: 24px;">Разделы</b>
