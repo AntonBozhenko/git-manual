@@ -17,10 +17,10 @@ style="margin-top: 20px; width: 40vw;"
 <blockquote style="margin: 0; padding: 5px">
     <h3>Установка Git на Windows</h3>
     <ol>
-        <li>Перейдите на официальный сайт Git по ссылке https://git-scm.com/.</li>
+        <li>Перейдите на официальный сайт Git по ссылке https://git-scm.com/</li>
         <li>Нажмите на кнопку "Downloads".</li>
-        <li>Запустите загруженный файл и следуйте инструкциям установщика.</li>
-        <li>После установки, откройте командную строку и введите команду <code>git --version</code>, чтобы проверить, что Git установлен.</li>
+        <li>Запустите загруженный файл и следуйте инструкциям установщика</li>
+        <li>После установки, откройте командную строку и введите команду <code>git --version</code>, чтобы проверить, что Git установлен</li>
     </ol>
 </blockquote>
 
@@ -28,9 +28,9 @@ style="margin-top: 20px; width: 40vw;"
     <h3>Установка Git на Mac</h3>
     <ol>
         <li>Откройте терминал</li>
-        <li>Установите Homebrew, если он еще не установлен, введя в терминале команду <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code>.</li>
-        <li>Установите Git, введя в терминале команду <code>brew install git</code>.</li>
-        <li>После установки, откройте терминал и введите команду <code>git --version</code>, чтобы проверить, что Git установлен.</li>
+        <li>Установите Homebrew, если он еще не установлен, введя в терминале команду <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code></li>
+        <li>Установите Git, введя в терминале команду <code>brew install git</code></li>
+        <li>После установки, откройте терминал и введите команду <code>git --version</code>, чтобы проверить, что Git установлен</li>
     </ol>
 </blockquote>
 
@@ -48,6 +48,46 @@ style="margin-top: 20px; width: 40vw;"
 <blockquote style="margin: 0; padding: 5px">Устанавливает адрес электронной почты, который будет отображаться в информации о выполняемых вами коммитах</blockquote>
 
     git config --global user.email "[адрес электронной почты]"
+    
+</details>
+
+<details> 
+<summary style="font-size: 20px;">Генерация ssh-ключа</summary>
+
+*Генерация ssh-ключа для использования на Github(или подобных сервисах)*
+
+<blockquote style="margin: 0; padding: 5px">
+    <h3>На Windows</h3>
+    <ol>
+        <li>Откройте Git Bash</li>
+        <li>Введите команду <code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code>. Эта команда создаст новый SSH-ключ с указанным email-адресом</li>
+        <li>Нажмите Enter, чтобы сохранить ключ в файл по умолчанию. Обычно это C:\Users\your_username\.ssh\id_rsa</li>
+        <li>Введите парольную фразу, если хотите добавить дополнительный уровень безопасности и нажмите Enter. Это необязательно, но рекомендуется</li>
+        <li>Добавьте ключ в ssh-agent с помощью команды <code>eval "$(ssh-agent -s)"</code> и <code>ssh-add ~/.ssh/id_rsa</code>. Это позволит использовать ключ без необходимости вводить парольную фразу каждый раз</li>
+        <li>Скопируйте содержимое файла id_rsa.pub в буфер обмена. Вы можете сделать это с помощью команды <code>clip < ~/.ssh/id_rsa.pub</code></li>
+        <li>Откройте GitHub(или другой подобный сервис) и перейдите в настройки своей учетной записи</li>
+        <li>Нажмите на "SSH and GPG keys" и затем на "New SSH key"</li>
+        <li>Введите заголовок и вставьте содержимое файла id_rsa.pub</li>
+        <li>Нажмите "Add SSH key"</li>
+    </ol>
+</blockquote>
+
+<blockquote style="margin: 0; padding: 5px">
+    <h3>На Mac</h3>
+    <ol>
+        <li>Откройте терминал</li>
+        <li>Введите команду <code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code> Эта команда создаст новый SSH-ключ с указанным email-адресом</li>
+        <li>Нажмите Enter, чтобы сохранить ключ в файл по умолчанию. Обычно это ~/.ssh/id_rsa</li>
+        <li>Введите парольную фразу, если хотите добавить дополнительный уровень безопасности и нажмите Enter. Это необязательно, но рекомендуется</li>
+        <li>Добавьте ключ в ssh-agent с помощью команды <code>eval "$(ssh-agent -s)"</code> и <code>ssh-add -K ~/.ssh/id_rsa</code> Это позволит использовать ключ без необходимости вводить парольную фразу каждый раз</li>
+        <li>Скопируйте содержимое файла id_rsa.pub в буфер обмена. Вы можете сделать это с помощью команды <code>pbcopy < ~/.ssh/id_rsa.pub</code></li>
+        <li>Откройте GitHub(или другой подобный сервис) и перейдите в настройки своей учетной записи</li>
+        <li>Нажмите на "SSH and GPG keys" и затем на "New SSH key"</li>
+        <li>Введите заголовок и вставьте содержимое файла id_rsa.pub</li>
+        <li>Нажмите "Add SSH key"</li>
+    </ol>
+</blockquote>
+
 </details>
 
 <details>
