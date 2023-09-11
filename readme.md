@@ -259,6 +259,41 @@ style="margin-top: 20px; width: 40vw;"
 
 </details>
 
+<details> 
+<summary style="font-size: 20px;">Работа с тегами</summary>
+
+*Использование тегов на проекте*
+
+<blockquote style="margin: 0; padding: 5px">
+   Теги в Git - это ссылки на определенные моменты в истории Git. Они используются для создания снимков состояния репозитория Git и помечают определенные моменты в истории как важные. Теги могут быть аннотированными или облегченными. Аннотированные теги содержат дополнительную информацию, такую как имя тега, дату создания и сообщение описания. Облегченные теги - это просто ссылки на коммиты.
+</blockquote>
+
+<blockquote style="margin: 0; padding: 5px">
+   Теги могут использоваться для различных целей, например, для пометки релизов, версий, важных моментов в истории проекта и т.д.. Использование тегов может помочь разработчикам ориентироваться в истории проекта и быстро находить нужные моменты.
+</blockquote>
+
+<blockquote style="margin: 0; padding: 5px">Просмотр имеющихся тегов</blockquote>
+
+    git tag
+
+<blockquote style="margin: 0; padding: 5px">Создание нового облегченного тега (например v1.0)</blockquote>
+
+    git tag <tag_name>
+
+<blockquote style="margin: 0; padding: 5px">Создание нового аннотированного тега (после выполнения откроется текстовый редактор, где нужно будет ввести сообщение описания тега)</blockquote>
+
+    git tag -a <tag_name> -m "<tag_message>"
+
+<blockquote style="margin: 0; padding: 5px">Удаление существующего тега</blockquote>
+
+    git tag -d <tag_name>
+
+<blockquote style="margin: 0; padding: 5px">Отправка тегов на сервер</blockquote>
+
+    git push --tags
+
+</details>
+
 <details>
 <summary style="font-size: 20px;">Синхронизация с удалённым репозиторием</summary>
 
