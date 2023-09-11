@@ -10,6 +10,33 @@ style="margin-top: 20px; width: 40vw;"
 <b style="font-size: 24px;">Разделы</b>
 
 <details> 
+<summary style="font-size: 20px;">Установка</summary>
+
+*Установка Git на компьютер*
+
+<blockquote style="margin: 0; padding: 5px">
+    <h3>Установка Git на Windows</h3>
+    <ol>
+        <li>Перейдите на официальный сайт Git по ссылке https://git-scm.com/.</li>
+        <li>Нажмите на кнопку "Downloads".</li>
+        <li>Запустите загруженный файл и следуйте инструкциям установщика.</li>
+        <li>После установки, откройте командную строку и введите команду <code>git --version</code>, чтобы проверить, что Git установлен.</li>
+    </ol>
+</blockquote>
+
+<blockquote style="margin: 0; padding: 5px">
+    <h3>Установка Git на Mac</h3>
+    <ol>
+        <li>Откройте терминал</li>
+        <li>Установите Homebrew, если он еще не установлен, введя в терминале команду <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code>.</li>
+        <li>Установите Git, введя в терминале команду <code>brew install git</code>.</li>
+        <li>После установки, откройте терминал и введите команду <code>git --version</code>, чтобы проверить, что Git установлен.</li>
+    </ol>
+</blockquote>
+
+</details>
+
+<details> 
 <summary style="font-size: 20px;">Первоначальная настройка</summary>
 
 *Настройка информации о пользователе для всех локальных репозиториев*
