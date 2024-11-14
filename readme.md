@@ -3,7 +3,7 @@
 <br>
 <image 
 src="./images/git-logo.png" 
-style="margin-top: 20px; width: 40vw;"
+style="margin-top: 20px; width: 30vw;"
 >
 </h1>
     
